@@ -144,27 +144,27 @@ const Login = () => {
 
     }
     
-    // const handleFbLogin = () => {
-    //     const fbProvider = new firebase.auth.FacebookAuthProvider();
-    //     firebase.auth().signInWithPopup(fbProvider)
-    //     .then(res=>{
-    //         const {displayName, email}= res.user;
-    //         const signedInUser = {
-    //             isSignedIn: true,
-    //             name: displayName,
-    //             email: email,
-    //         }
-    //         // setUser(signedInUser);
-    //         setLoggedInUser(signedInUser);
-    //         history.replace(from);
-    //       }).catch(function(error) {
-    //         var errorCode = error.code;
-    //         var errorMessage = error.message;
-    //         var email = error.email;
-    //         var credential = error.credential;
+    const handleFbLogin = () => {
+        const fbProvider = new firebase.auth.FacebookAuthProvider();
+        firebase.auth().signInWithPopup(fbProvider)
+        .then(res=>{
+            const {displayName, email}= res.user;
+            const signedInUser = {
+                isSignedIn: true,
+                name: displayName,
+                email: email,
+            }
+            // setUser(signedInUser);
+            setLoggedInUser(signedInUser);
+            history.replace(from);
+          }).catch(function(error) {
+            var errorCode = error.code;
+            var errorMessage = error.message;
+            var email = error.email;
+            var credential = error.credential;
 
-    //       });
-    // }
+          });
+    }
 
 
  
