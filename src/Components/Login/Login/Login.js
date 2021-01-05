@@ -150,7 +150,7 @@ const Login = () => {
         .then(res=>{
             const {displayName, email}= res.user;
             const signedInUser = {
-                isSignedIn: true,
+                // isSignedIn: true,
                 name: displayName,
                 email: email,
             }
