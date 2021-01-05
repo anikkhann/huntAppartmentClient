@@ -207,7 +207,7 @@ const Login = () => {
                 <h5>Login</h5>
             </Button>
            {/* <input variant="warning" type="submit" value="Submit"/> */}
-            <p className="text-center">Don't have an account? <a name='newUser' href="/signup" >Create an account</a></p>
+            <p className="text-center">Don't have an account? <a name='newUser' href="/login">Create an account</a></p>
             </Form>
             
         </div>
