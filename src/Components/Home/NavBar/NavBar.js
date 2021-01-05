@@ -36,7 +36,7 @@ const NavBar = () => {
                             <a className="nav-link text-dark" href="/">Concerns</a>
                         </li>  
                         <li className="nav-item mx-2">
-                            <Button className=" nav-btn" width="100px" style={{backgroundColor: '#275A53', border: '1px solid #275A53'}} href='/login'>Login</Button>
+                           <Link to="/login"> <Button className=" nav-btn" width="100px" style={{backgroundColor: '#275A53', border: '1px solid #275A53'}}>Login</Button></Link>
                             {/* <a className="nav-link text-dark" href="#contact">Concerns</a> */}
                         </li>  
                     </ul>
