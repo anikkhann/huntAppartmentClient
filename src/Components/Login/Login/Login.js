@@ -219,7 +219,7 @@ const Login = () => {
                     <h5>Continue with Facebook</h5>
                 </div>
             </a>
-            <a onClick={handleGoogleLogin}>
+            <a onClick={handleGoogleLogin} style={{cursor:"pointer"}}>
                 <div className="google">
                     <img src={google} alt="Google"></img>
                     <h5>Continue with Google</h5>
